@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Satisfaction Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .survey-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Client Satisfaction Survey</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="question">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="question">
+                <label>Who did you see today for your appointment?</label>
+                <select id="stylist" required>
+                    <option value="">Select...</option>
+                    <option value="Lisa">Lisa</option>
+                    <option value="Kristi">Kristi</option>
+                    <option value="Kirstyn">Kirstyn</option>
+                    <option value="Stephanie">Stephanie</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>Rate the cleanliness and ambiance of the salon (1-5):</label>
+                <select id="cleanliness" required>
+                    <option value="">Select...</option>
+                    <option value
